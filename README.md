@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/cotybro/Clock-App)
-- Live Site URL: [[Live Site](https://your-live-site-url.com)](https://clock-app-ashen.vercel.app/)
+- Live Site URL: [Live Site](https://clock-app-ashen.vercel.app/)
 
 ## My process
 
