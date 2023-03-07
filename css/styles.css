@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 100vh;
+  z-index: 23434;
+}
+
+/* --------- Typography --------- */
+
+/* ----- Quote -----*/
+
+#quote {
+  font-size: 1.125rem;
+  line-height: 28px;
+}
+
+#author {
+  font-size: 1.125rem;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+#refresh-btn {
+  background-image: url("../assets/desktop/icon-refresh.svg");
+  background-repeat: none;
+  background-size: cover;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+}
+
+#refresh-btn:hover {
+  cursor: pointer;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(107%)
+    contrast(101%);
+}
+
+/* ----- Time ----- */
+
+.time-title {
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.time-text {
+  font-size: 10rem;
+  letter-spacing: -5px;
+}
+
+.time-location {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  align-self: flex-end;
+  margin-bottom: 37px;
+  margin-left: 7px;
+}
+
+.location-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+/* ----- More ----- */
+
+.more {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.more-text {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+article {
+  background-color: #ffffff;
+  opacity: 75%;
+}
+
+.more-title {
+  font-size: 0.9375rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 9px;
+}
+
+.more-desc {
+  font-size: 3.5rem;
+  color: #303030;
+  font-weight: 700;
+  margin-bottom: 42px;
+}
+
+/* --------- Layout --------- */
+
+main {
+  /* padding: 56px 164px 98px; */
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+main {
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ----- Quote ----- */
+
+.quote-container {
+  max-width: 53%;
+  margin-top: 56px;
+  margin-left: 50px;
+
+  /* display: none; */
+}
+
+.quote-wrapper {
+  align-items: flex-start;
+}
+
+#quote {
+  margin-right: 1rem;
+}
+
+#refresh-btn {
+  margin-top: 10px;
+}
+
+/* ----- Time / More Btn----- */
+
+#time-img {
+  align-self: center;
+}
+
+.time-title {
+  margin-left: 1rem;
+}
+
+.time-location {
+  align-self: flex-end;
+  margin-bottom: 37px;
+  margin-left: 7px;
+}
+
+.bottom-wrapper {
+  justify-content: space-between;
+  margin: 56px 50px 98px;
+}
+
+.more {
+  align-self: flex-end;
+  margin-left: 100px;
+  padding: 15px 9px 13px 21px;
+  align-items: center;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.more:hover .arrow-down {
+  background-color: #999999;
+}
+
+.more-text {
+  margin-right: 13px;
+}
+
+.arrow-down {
+  background-color: #303030;
+  padding: 17px 14px;
+  border-radius: 50%;
+}
+
+/* ----- More ----- */
+
+article {
+  position: absolute;
+  z-index: 12;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: none;
+}
+
+.more-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+}
+
+.border-left {
+  border-left: 1px solid #303030;
+  padding-left: 94px;
+}
+
+.toggle {
+  display: none;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+/* ---------- Media Queries ---------- */
+
+/* ----- Tablet ----- */
+@media screen and (max-width: 885px) {
+  .quote-container {
+    max-width: 90%;
+  }
+
+  .bottom-wrapper {
+    flex-direction: column;
+  }
+
+  .time-location {
+    margin-bottom: 30px;
+    padding-left: 11px;
+  }
+
+  .more {
+    align-self: start;
+    margin-left: 0;
+    margin-top: 65px;
+    z-index: 23;
+  }
+
+  .border-left {
+    border: none;
+  }
+
+  .more-title {
+    font-size: 0.8125rem;
+  }
+
+  .more-desc {
+    font-size: 2.5rem;
+  }
+
+  .columns {
+    padding: 0 10px;
+  }
+}
+
+/* ----- Phone ----- */
+
+@media screen and (max-width: 630px) {
+  #quote,
+  #author {
+    font-size: 0.75rem;
+  }
+
+  .time-title,
+  .time-location,
+  .location-text {
+    font-size: 0.9375rem;
+  }
+
+  .time-text {
+    font-size: 6.25rem;
+  }
+
+  .time-location {
+    margin-bottom: 22px;
+    padding-left: 11px;
+  }
+
+  .more-text {
+    font-size: 0.75rem;
+  }
+
+  .more {
+    padding: 13px 15px 12px 17px;
+  }
+
+  #refresh-btn {
+    margin-right: 15px;
+  }
+
+  .more-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .flex-m {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8vh;
+  }
+
+  .more-title {
+    font-size: 0.625rem;
+  }
+
+  .more-desc {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  .columns {
+    width: 90%;
+    height: 30%;
+  }
+}

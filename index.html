@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Frontend Mentor | Clock App</title>
+  </head>
+  <body>
+    <main class="flex">
+      <div class="quote-container">
+        <div class="quote-wrapper flex">
+          <p id="quote">
+            “The science of operations, as derived from mathematics more
+            especially, is a science of itself, and has its own abstract truth
+            and value.”
+          </p>
+          <button id="refresh-btn"></button>
+        </div>
+        <p id="author">Ada Lovelace</p>
+      </div>
+
+      <div class="bottom-wrapper flex">
+        <div class="time-container">
+          <div class="time-text-wrapper flex">
+            <img src="./assets/desktop/icon-sun.svg" id="time-img" />
+            <p class="time-title" id="time-title"></p>
+          </div>
+          <div class="time-wrapper flex">
+            <h1 class="time-text" id="time"></h1>
+            <p class="time-location" id="time-location"></p>
+          </div>
+          <p class="location-text" id="city-location"></p>
+        </div>
+        <div class="more flex" id="more">
+          <p class="more-text" id="more-text">More</p>
+          <img
+            src="./assets/desktop/icon-arrow-down.svg"
+            alt=""
+            class="arrow-down"
+            id="arrow"
+          />
+        </div>
+      </div>
+    </main>
+
+    <article id="article">
+      <div class="more-container flex">
+        <div class="columns">
+          <div class="flex-m">
+            <p class="more-title">Current Time zone</p>
+            <p class="more-desc" id="time-zone"></p>
+          </div>
+          <div class="flex-m">
+            <p class="more-title">Day of the year</p>
+            <p class="more-desc" id="day-of-the-year"></p>
+          </div>
+        </div>
+        <div class="columns border-left">
+          <div class="flex-m">
+            <p class="more-title">Day of the week</p>
+            <p class="more-desc" id="day-of-the-week"></p>
+          </div>
+          <div class="flex-m">
+            <p class="more-title">Week number</p>
+            <p class="more-desc" id="week-number"></p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
