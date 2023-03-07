@@ -29,12 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screencapture-clock-app-ashen-vercel-app-2023-03-07-17_36_01](https://user-images.githubusercontent.com/36529826/223580072-abd9cf3d-6397-4efa-bc73-0450ad13e431.png)
+
 
 ### Links
 
 - Solution URL: [Solution](https://github.com/cotybro/Clock-App)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [[Live Site](https://your-live-site-url.com)](https://clock-app-ashen.vercel.app/)
 
 ## My process
 
